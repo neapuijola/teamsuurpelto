@@ -1,0 +1,172 @@
+body {
+    color: black;
+    background-color: white;
+    font-family: "Pochaevsk", serif;
+}
+
+h1 {
+    color: rgb(255, 0, 153);
+    font-family: "Pochaevsk", serif;
+    font-style: normal;
+    font-size: 10vw;
+    /* Fontti on 10% näytön leveydestä */
+}
+
+/*Navigointi */
+
+#topnav a {
+    text-decoration: none;
+}
+
+#topnav li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px 5px;
+    border: solid  rgb(160, 231, 19);
+    padding: 2px
+}
+
+#topnav ul {
+    padding-left: 0px;
+}
+
+/* pelaajat */
+
+.paidat {width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;}
+
+    .pelaaja {width: 100%;
+height: auto;
+justify-content: center;
+align-items: center;}
+
+/* Liity sivu */
+
+.yhteystiedot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    }
+
+.logo {
+    vertical-align: baseline;
+    width: 10%;
+}
+
+.logo2 {
+    vertical-align: middle;
+    width: 10%;
+    max-width: 10%;
+}
+
+.eireunoja {
+    border: 0cap;
+    padding: 20px;
+    align-items: center;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.Liity {
+    width: 40vw;
+}
+
+/*kaikelle */
+
+.keskitä{text-align: center;}
+
+.laatikko {border: solid rgb(160, 231, 19);
+margin-right: 10px;
+margin-left: 10px;
+margin-bottom: 10px;
+padding: 20px;
+align-items: stretch;
+text-align: center;
+justify-content: center;
+}
+
+header,
+footer {
+    text-align: center;
+    font-size: 4vw;
+}
+
+.korostus {
+    color: rgb(255, 0, 153);
+}
+
+.omakuva {
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+}
+
+/* toiminta sivu */
+
+.suurpeltologo {
+    display: flex;
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    object-fit: cover;
+   }
+
+/*mobiili */
+@media only screen and (max-width: 420px) {
+
+}
+
+@media only screen and (min-width: 421px) and (max-width: 1024px) {
+
+
+        .flex_container {
+            display: flex;
+            flex-wrap: wrap;}
+
+        .flex_item {
+            flex: 1;
+            gap: 20px;
+            padding-right: 5px;
+            padding-left: 5px;
+            display: flex;
+            align-items: stretch;}
+
+        .pelaajat.flex_item {
+            flex: 0 0 45%;
+            
+        }
+        .eireunoja {flex: 1 1 45%;}
+
+    }
+
+
+@media only screen and (min-width: 1025px) {
+
+      .flex_container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flex_item {
+            flex: 1;
+            gap: 20px;
+            padding-right: 5px;
+            padding-left: 5px;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .pelaajat.flex_item {
+            flex: 0 0 300PX;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .eireunoja {flex: 1 1 45%}
+
+    }
